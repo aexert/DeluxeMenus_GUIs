@@ -1,0 +1,93 @@
+# Infuse Guide Menu
+#=========================================================
+menu_title: '&7ɪɴғᴜsᴇ ɢᴜɪᴅᴇ'
+open_command:
+  - infuseguide
+register_command: true
+size: 27
+items:
+
+  'info':
+    material: WRITABLE_BOOK
+    slot: 13
+    display_name: '&#ffaa00What is Infuse?'
+    lore:
+      - '&7▶ &fInfuse is a special system'
+      - '&fthat enhances your PvP abilities.'
+      - ''
+      - '&6● &fEquip 1 Primary & 1 Support Spark'
+      - '&6● &fGain passive buffs & effects'
+      - '&6● &fCombine strategically in combat'
+      - ''
+      - '&fInfuse items are crafted via custom recipes.'
+    hide_attributes: true
+
+  'effects':
+    material: ECHO_SHARD
+    slot: 11
+    display_name: '&#55ffffInfuse Effects'
+    lore:
+      - '&7▶ &fAll available Infuse Sparks:'
+      - ''
+      - '&bSupport Sparks:'
+      - '&3● Ocean'
+      - '&c● Fire'
+      - '&a● Emerald'
+      - '&9● Speed'
+      - ''
+      - '&6Primary Sparks:'
+      - '&e● Feather'
+      - '&b● Frost'
+      - '&6● Haste'
+      - '&c● Heart'
+      - '&8● Invisibility'
+      - '&d● Regeneration'
+      - '&4● Strength'
+      - '&7● Thunder'
+    hide_attributes: true
+
+  'recipes':
+    material: KNOWLEDGE_BOOK
+    slot: 15
+    display_name: '&#00ffccUnlock All Recipes'
+    lore:
+      - '&8Click to unlock all Infuse Spark Recipes.'
+      - ''
+      - '&fIncludes 12 total sparks:'
+      - '&f● 4 Support'
+      - '&f● 8 Primary'
+    enchantments:
+      - DURABILITY;1
+    hide_enchantments: true
+    hide_attributes: true
+    click_commands:
+      - '[console] recipe give %player_name% infuse_spark:emerald_effect'
+      - '[console] recipe give %player_name% infuse_spark:feather_effect'
+      - '[console] recipe give %player_name% infuse_spark:fire_effect'
+      - '[console] recipe give %player_name% infuse_spark:frost_effect'
+      - '[console] recipe give %player_name% infuse_spark:haste_effect'
+      - '[console] recipe give %player_name% infuse_spark:heart_effect'
+      - '[console] recipe give %player_name% infuse_spark:invisibility_effect'
+      - '[console] recipe give %player_name% infuse_spark:ocean_effect'
+      - '[console] recipe give %player_name% infuse_spark:regeneration_effect'
+      - '[console] recipe give %player_name% infuse_spark:speed_effect'
+      - '[console] recipe give %player_name% infuse_spark:strength_effect'
+      - '[console] recipe give %player_name% infuse_spark:thunder_effect'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[message] &a✔ All Infuse Spark Recipes unlocked!'
+      - '[close]'
+
+  'close':
+    material: BARRIER
+    slot: 26
+    display_name: '&#FF5555ᴄʟᴏsᴇ'
+    lore:
+      - '&8Click to exit'
+    click_commands:
+      - '[sound] BLOCK_CHEST_CLOSE'
+      - '[close]'
+
+  'filler':
+    material: GRAY_STAINED_GLASS_PANE
+    slots: [0,1,2,3,4,5,6,7,8,9,10,12,14,16,17,18,19,20,21,22,23,24,25]
+    display_name: ' '

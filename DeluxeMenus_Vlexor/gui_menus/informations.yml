@@ -1,0 +1,96 @@
+#  Vlexor SMP DeluxeMenus Information Menu - Season 1
+#=========================================================
+menu_title: '&7ᴠʟᴇxᴏʀ sᴍᴘ ɪɴғᴏʀᴍᴀᴛɪᴏɴ'
+open_command:
+  - info
+  - informations
+register_command: true
+size: 36
+items:
+
+  '1':
+    material: BOOKSHELF
+    slot: 10
+    display_name: '&c&lᴠʟᴇxᴏʀ sᴍᴘ'
+    lore:
+      - '&7▶ &fGeneral section info:'
+      - ''
+      - '&4▪ &fDifficulty: &cHard'
+      - '&4▪ &fVersion Compatibility: &a1.16 - 1.21.x'
+      - '&4▪ &fGameplay: &#5FE2C5Infuse + Lifesteal'
+      - '&4▪ &fPvP Mode: &e1.21 PvP Mechanics'
+      - '&4▪ &fWorldBorder: &a10000x10000'
+      - '&4▪ &fCrystal PvP: &cBanned'
+      - '&4▪ &fBreach Enchant: &cBanned'
+      - '&4▪ &fSeason Released: &7August 2025'
+      - ''
+      - '&eCopyright © 2025 &#B381FF&nVlexor SMP'
+
+  '2':
+    material: DIAMOND_SWORD
+    slot: 12
+    display_name: '&c&lɢᴀᴍᴇᴘʟᴀʏ & sʏsᴛᴇᴍ'
+    lore:
+      - '&7▶ &fInformation:'
+      - ''
+      - '&fA unique &cInfuse + Lifesteal &fexperience'
+      - '&fwith fast-paced &astrategic PvP combat.'
+      - ''
+      - '&c● &fCrossplay Supported'
+      - '&c● &fKill players to steal hearts'
+      - '&c● &fInfuse system with effects & cooldowns'
+      - '&c● &f10000x10000 World Border'
+      - '&c● &fMinimum Pay-to-Win – Balanced Progression'
+      - ''
+      - '&fJoin our Discord for info & events:'
+      - '&a&nhttps://dsc.gg/vlexor'
+
+  '3':
+    material: MAP
+    slot: 14
+    display_name: '&e&lᴇᴄᴏɴᴏᴍʏ & ғᴇᴀᴛᴜʀᴇs'
+    lore:
+      - '&7▶ &fServer Features:'
+      - ''
+      - '&e● &fVirtual Spawner System'
+      - '&e● &fAuction House'
+      - '&e● &fServer Shop'
+      - '&e● &fBounty System'
+      - '&e● &fCrate Rewards & Keys'
+      - '&e● &fTeam System'
+      - '&e● &fCoin Shop (vote, events, etc.)'
+      - '&e● &fEssentials: /home, /spawn, /tpa'
+      - ''
+      - '&fLearn more on Discord:'
+      - '&a&nhttps://dsc.gg/vlexor'
+    left_click_commands:
+      - '[message] &4&l[!] &fMore details on Discord: &ahttps://dsc.gg/vlexor'
+      - '[close]'
+    right_click_commands:
+      - '[message] &4&l[!] &fMore details on Discord: &ahttps://dsc.gg/vlexor'
+      - '[close]'
+
+  '4':
+    material: BOOK
+    slot: 16
+    display_name: '&a&lᴀᴅᴅɪᴛɪᴏɴᴀʟ ᴅᴇᴛᴀɪʟs'
+    lore:
+      - '&7▶ &fServer Extras:'
+      - ''
+      - '&a● &fInfuse System: Custom PvP mechanics'
+      - '&a● &fLifesteal: Heart-based PvP'
+      - '&a● &fCrate Keys, Auction House, Coin Shop'
+      - '&a● &fTeams & Bounties for Competitive Fun'
+      - '&a● &fWorld Border: 10k x 10k'
+      - '&a● &fBalanced Ranks & Progression'
+      - '&a● &fCrossplay Support for All Platforms'
+      - ''
+      - '&fGet news, updates, and more on Discord:'
+      - '&a&nhttps://dsc.gg/vlexor'
+
+  '5':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2VkMWFiYTczZjYzOWY0YmM0MmJkNDgxOTZjNzE1MTk3YmUyNzEyYzNiOTYyYzk3ZWJmOWU5ZWQ4ZWZhMDI1In19fQ
+    slot: 31
+    display_name: '&cClose'
+    click_commands:
+      - '[close]'

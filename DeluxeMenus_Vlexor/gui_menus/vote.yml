@@ -1,0 +1,110 @@
+open_command:
+- vote
+- votegui
+- votes
+register_command: true
+size: 54
+menu_title: '&#3f3f3fᴠᴏᴛᴇ'
+
+items:
+
+  'filler':
+    material: GRAY_STAINED_GLASS_PANE
+    display_name: "&f"
+    data: 1
+    slots: [0-53]
+
+  'main':
+    material: BELL
+    data: 1
+    slot: 13
+    display_name: "&#fc07f3&lᴄᴏᴍᴍᴜɴɪᴛʏ ᴀᴅᴠᴀɴᴄᴇᴍᴇɴᴛ"
+    lore:
+      - "&8VoteParty"
+      - ""
+      - "&7By voting you will make progress"
+      - "&7VoteParty. To summon a pinata"
+      - "&7it is necessary to vote %pinataparty_votes_needed% times"
+      - ""
+      - ""
+      - "&f&lᴘʀᴏɢʀᴇss"
+      - "&8[&#fc99f8%pinataparty_current_votes% %zessentials_progressbar_{pinataparty_current_votes}_{pinataparty_votes_needed}_20_|_&#fc99f8_&7% &#fc99f8%pinataparty_votes_needed%&8]"
+      - ""
+      - "&f&lʀᴇᴡᴀʀᴅs"
+      - " &#f8b175• &#e5c262Summons a Pinata"
+  'vote_link_1':
+    material: MAP
+    data: 1
+    slot: 29
+    display_name: '&#5FE2C5&lᴠᴏᴛᴇ ʟɪɴᴋ #1'
+    lore:
+      - "&8Vote Information"
+      - ""
+      - "&#A2CBEC&lʀᴇᴡᴀʀᴅs:"
+      - "&f➥ 1x &fVote Crate Key"
+      - "&f➥ 7x Coins"
+      - "&f➥ $1000 Money"
+      - ""
+      - "&#A2CBEC&l▶ Click here to vote!"
+    left_click_commands:
+      - '[message] &#A2CBEC▶ Vote Link #1: &f&nhttps://minecraft-mp.com/server/346810/vote/'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[close]'
+      
+  'vote_link_2':
+    material: MAP
+    data: 1
+    slot: 30
+    display_name: '&#5FE2C5&lᴠᴏᴛᴇ ʟɪɴᴋ #2'
+    lore:
+      - "&8Vote Information"
+      - ""
+      - "&#A2CBEC&lʀᴇᴡᴀʀᴅs:"
+      - "&f➥ 1x &fVote Crate Key"
+      - "&f➥ 7x Coins"
+      - "&f➥ $1000 Money"
+      - ""
+      - "&#A2CBEC&l▶ Click here to vote!"
+    left_click_commands:
+      - '[message] &#A2CBEC▶ Vote Link #2: &f&nhttps://minecraft-serverlist.com/server/3027/vote'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[close]'
+
+  'vote_link_3':
+    material: MAP
+    data: 1
+    slot: 32
+    display_name: '&#5FE2C5&lᴠᴏᴛᴇ ʟɪɴᴋ #3'
+    lore:
+      - "&8Vote Information"
+      - ""
+      - "&#A2CBEC&lʀᴇᴡᴀʀᴅs:"
+      - "&f➥ 1x &fVote Crate Key"
+      - "&f➥ 7x Coins"
+      - "&f➥ $1000 Money"
+      - ""
+      - "&#A2CBEC&l▶ Click here to vote!"
+    left_click_commands:
+      - '[message] &#A2CBEC▶ Vote Link #3: &f&nhttps://minecraft-server.net/vote/Vlexor_SMP/'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[close]'
+
+
+  'vote_link_4':
+    material: MAP
+    data: 1
+    slot: 33
+    display_name: '&#5FE2C5&lᴠᴏᴛᴇ ʟɪɴᴋ #4'
+    lore:
+      - "&8Vote Information"
+      - ""
+      - "&#A2CBEC&lʀᴇᴡᴀʀᴅs:"
+      - "&f➥ 1x &fVote Crate Key"
+      - "&f➥ 7x Coins"
+      - "&f➥ $1000 Money"
+      - ""
+      - "&#A2CBEC&l▶ Click here to vote!"
+    left_click_commands:
+      - '[message] &#A2CBEC▶ Vote Link #4: &f&nhttps://topg.org/minecraft-servers/server-668013'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[close]'

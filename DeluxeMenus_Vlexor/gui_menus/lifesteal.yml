@@ -1,0 +1,69 @@
+# Lifesteal Guide Menu
+#=========================================================
+menu_title: '&7ʟɪғᴇsᴛᴇᴀʟ ɢᴜɪᴅᴇ'
+open_command:
+  - lifestealguide
+register_command: true
+size: 27
+items:
+
+  'info':
+    material: WRITABLE_BOOK
+    slot: 13
+    display_name: '&#ff4444What is Lifesteal?'
+    lore:
+      - '&7▶ &fKill players to steal their hearts.'
+      - '&7▶ &fCraft extra hearts and store them.'
+      - ''
+      - '&c● &fMax Hearts: &c20 default (can increase)'
+      - '&c● &fHeart Loss: -1 on death'
+      - '&c● &fHeart Gain: +1 on kill'
+      - ''
+      - '&fCraft special items to support survival.'
+    hide_attributes: true
+
+  '1':
+    material: RED_DYE
+    slot: 11
+    display_name: '&#ff0000Heart'
+    lore:
+      - '&8Click to unlock the recipe'
+      - ''
+      - '&7Craft this item to gain an extra heart.'
+    enchantments:
+      - DURABILITY;1
+    hide_enchantments: true
+    hide_attributes: true
+    click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[console] recipe give %player_name% lifestealcore:heart'
+      - '[message] &fCheck your crafting table for the &#ff0000Heart Recipe!'
+      - '[close]'
+
+  '2':
+    material: BEACON
+    slot: 15
+    display_name: '&#6eff88Revive Beacon'
+    lore:
+      - '&8Click to unlock the recipe'
+      - ''
+      - '&7Craft this to revive teammates who reach 0 hearts.'
+    enchantments:
+      - DURABILITY;1
+    hide_enchantments: true
+    hide_attributes: true
+    click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[console] recipe give %player_name% lifestealcore:revie_beacon'
+      - '[message] &fCheck your crafting table for the &#6eff88Revive Beacon!'
+      - '[close]'
+
+  '3':
+    material: BARRIER
+    slot: 26
+    display_name: '&#FF5555ᴄʟᴏsᴇ'
+    lore:
+      - '&8Click to exit'
+    click_commands:
+      - '[sound] BLOCK_CHEST_CLOSE'
+      - '[close]'

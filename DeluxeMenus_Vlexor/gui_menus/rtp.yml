@@ -1,0 +1,32 @@
+#  Exert's DeluxeMenus RTP Menu
+#=========================================================
+open_command: rtp
+register_command: true
+size: 27
+menu_title: 'Random Teleport'
+
+items:
+
+  'filler':
+    material: GRAY_STAINED_GLASS_PANE
+    display_name: "&f"
+    data: 1
+    slots: [0-26]
+
+  'overworld':
+    material: GRASS_BLOCK
+    data: 1
+    slot: 13
+    display_name: "&#1fff5a&lThe Overworld"
+    lore:
+      - ""
+      - "&7Click here to randomly teleport"
+      - "&7to somewhere in the overworld"
+      - ""
+      - "&#a30000&l⚠ PVP IS ENABLED ⚠"
+      - ""
+      - "&#72FF97&l➥ CLICK TO TELEPORT"
+    left_click_commands:
+      - '[player] betterrtp world world'
+      - '[close]'
+

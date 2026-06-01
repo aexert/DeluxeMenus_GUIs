@@ -1,0 +1,216 @@
+open_command: 
+  - rank
+  - ranks
+register_command: true
+open_commands:
+  - "[sound] UI_TOAST_IN"
+close_commands:
+  - "[sound] UI_TOAST_OUT"
+size: 36
+menu_title: '&7ʀᴀɴᴋѕ'
+
+items:
+
+  'filler':
+    material: BLACK_STAINED_GLASS_PANE
+    display_name: "&f"
+    data: 1
+    slots: [0-35]
+
+  'main':
+    material: head-%player_name%
+    data: 1
+    slot: 22
+    display_name: "&#ff3d47&lѕᴇʀᴠᴇʀ ʀᴀɴᴋѕ"
+    lore:
+      - "&8ᴅᴏɴᴀᴛᴏʀ ʀᴀɴᴋѕ"
+      - ""
+      - "&fRanks are designed to provide"
+      - "&fspecial perks while ensuring"
+      - "&#ff6970minimal pay-to-win elements."
+      - ""
+      - "&fTo purchase or claim a rank,"
+      - "&fvisit the store link below."
+      - ""
+      - "&bStore:"
+      - "&b&nhttps://dsc.gg/vlexorshop"
+      - ""
+    click_commands:
+      - '[message] &#55FF55&l🎉 VIEW ALL RANKS IN STORE'
+      - '[message]  '
+      - '[message]  Buy from: &nhttps://dsc.gg/vlexorshop'
+      - '[close]'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+
+  'vip':
+    material: LIME_BANNER
+    data: 1
+    slot: 11
+    display_name: "&#66BB6A&lV&#53AE4B&lI&#40A02B&lP &fRank"
+    lore:
+      - "&8ᴘᴀɪᴅ ʀᴀɴᴋ"
+      - ""
+      - "&#66BB6APrice: &#66BB6A100 Taka"
+      - ""
+      - "&#66BB6APerks:"
+      - "&7➥ &#66BB6A3x &fHomes"
+      - "&7➥ &#66BB6AIncludes &nVIP Kit"
+      - "&7➥ &#66BB6A/echest"
+      - "&7➥ &#66BB6A/hat"
+      - "&7➥ &#66BB6A/msgtoggle"
+      - "&7➥ &#66BB6A/paytoggle"
+      - "&7➥ &#66BB6AAuction slots: 5"
+      - "&7➥ &#66BB6APrefix"
+      - "&7➥ &#66BB6ATab Priority"
+      - "&7➥ &#66BB6ADiscord Role"
+      - ""
+      - "&#66BB6ABuy from: &nhttps://dsc.gg/vlexorshop"
+      - ""
+    click_commands:
+      - '[message] &#66BB6A&l🛒 BUY VIP RANK'
+      - '[message] '
+      - '[message] Buy from: &nhttps://dsc.gg/vlexorshop'
+      - '[close]'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+
+  'mvp':
+    material: LIGHT_BLUE_BANNER
+    data: 1
+    slot: 12
+    display_name: "&#04A5E5&lM&#12A2CD&lV&#209FB5&lP &fRank"
+    lore:
+      - "&8ᴘᴀɪᴅ ʀᴀɴᴋ"
+      - ""
+      - "&#04A5E5Price: &#04A5E5150 Taka"
+      - ""
+      - "&#04A5E5Perks:"
+      - "&7➥ &#04A5E55x &fHomes"
+      - "&7➥ &#04A5E5Includes &nMVP Kit"
+      - "&7➥ &#04A5E5/echest"
+      - "&7➥ &#04A5E5/hat"
+      - "&7➥ &#04A5E5/msgtoggle"
+      - "&7➥ &#04A5E5/paytoggle"
+      - "&7➥ &#04A5E5/compass"
+      - "&7➥ &#04A5E5/trash"
+      - "&7➥ &#04A5E54 Rows of Enderchest"      
+      - "&7➥ &#04A5E5Auction slots: 10"
+      - "&7➥ &#04A5E5Prefix"
+      - "&7➥ &#04A5E5Tab Priority"
+      - "&7➥ &#04A5E5Discord Role"
+      - ""
+      - "&#04A5E5Buy from: &nhttps://dsc.gg/vlexorshop"
+      - ""
+    click_commands:
+      - '[message] &#04A5E5&l🛒 BUY MVP RANK'
+      - '[message] '
+      - '[message] Buy from: &nhttps://dsc.gg/vlexorshop'
+      - '[close]'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+
+  'elite':
+    material: ORANGE_BANNER
+    data: 1
+    slot: 14
+    display_name: "&#DF8E1D&lE&#E19D3A&lL&#E2AB57&lI&#E4BA73&lT&#E5C890&lE &fRank"
+    lore:
+      - "&8ᴘᴀɪᴅ ʀᴀɴᴋ"
+      - ""
+      - "&#DF8E1DPrice: &#DF8E19250 Taka"
+      - ""
+      - "&#DF8E1DPerks:"
+      - "&7➥ &#DF8E157x &fHomes"
+      - "&7➥ &#DF8E1DIncludes &nELITE Kit"
+      - "&7➥ &#DF8E1D/echest"
+      - "&7➥ &#DF8E1D/hat"
+      - "&7➥ &#DF8E1D/compass"
+      - "&7➥ &#DF8E1D/trash"
+      - "&7➥ &#DF8E1D/craft"
+      - "&7➥ &#DF8E1D/msgtoggle"
+      - "&7➥ &#DF8E1D/paytoggle"
+      - "&7➥ &#DF8E1D5 Rows of Enderchest"
+      - "&7➥ &#DF8E1DAuction slots: 15"
+      - "&7➥ &#DF8E1DPrefix"
+      - "&7➥ &#DF8E1DTab Priority"
+      - "&7➥ &#DF8E1DDiscord Role"
+      - ""
+      - "&#DF8E1DBuy from: &nhttps://dsc.gg/vlexorshop"
+      - ""
+    click_commands:
+      - '[message] &#DF8E1D&l🛒 BUY ELITE RANK'
+      - '[message] '
+      - '[message] Buy from: &nhttps://dsc.gg/vlexorshop'
+      - '[close]'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+
+  'legend':
+    material: PURPLE_BANNER
+    data: 1
+    slot: 15
+    display_name: "&#8839EF&lL&#9153F1&lE&#9B6EF3&lG&#A488F4&lE&#AEA3F6&lN&#B7BDF8&lD &fRank"
+    lore:
+      - "&8ᴘᴀɪᴅ ʀᴀɴᴋ"
+      - ""
+      - "&#8839EFPrice: &#8839EF350 Taka"
+      - ""
+      - "&#8839EFPerks:"
+      - "&7➥ &#8839EF10x &fHomes"
+      - "&7➥ &#8839EFIncludes &nLEGEND Kit"
+      - "&7➥ &#8839EF/echest"
+      - "&7➥ &#8839EF/hat"
+      - "&7➥ &#8839EF/compass"
+      - "&7➥ &#8839EF/trash" 
+      - "&7➥ &#8839EF/msgtoggle"
+      - "&7➥ &#8839EF/paytoggle"
+      - "&7➥ &#8839EF/craft"  
+      - "&7➥ &#8839EF/anvil"
+      - "&7➥ &#8839EF/cartographytable"
+      - "&7➥ &#8839EF/smithingtable"
+      - "&7➥ &#8839EF/loom"
+      - "&7➥ &#8839EF/grindstone"
+      - "&7➥ &#8839EF/stonecutter"
+      - "&7➥ &#8839EF/ptime"
+      - "&7➥ &#8839EF5 Rows of Enderchest"
+      - "&7➥ &#8839EFAuction slots: 20"
+      - "&7➥ &#8839EFPrefix"
+      - "&7➥ &#8839EFTab Priority"
+      - "&7➥ &#8839EFDiscord Role"
+      - ""
+      - "&#8839EFBuy from: &nhttps://dsc.gg/vlexorshop"
+      - ""
+    click_commands:
+      - '[message] &#8839EF&l🛒 BUY LEGEND RANK'
+      - '[message] '
+      - '[message] Buy from: &nhttps://dsc.gg/vlexorshop'
+      - '[close]'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+
+  'media':
+    material: MAGENTA_BANNER
+    data: 1
+    slot: 13
+    display_name: "&#E43A96&lM&#E8499F&lE&#ED58A8&lD&#F166B1&lI&#F575BA&lA &fRank"
+    lore:
+      - "&8ᴍᴇᴅɪᴀ ʀᴀɴᴋ"
+      - ""
+      - "&#E43A96Requirements:"
+      - "&7➥ &#E43A96Create and upload videos featuring our server."
+      - "&7➥ &#E43A96Create a ticket on Discord to apply."
+      - ""
+      - "&#E43A96Perks:"
+      - "&7➥ &#E43A96Includes &nMEDIA Kit"
+      - "&7➥ &#E43A96Exclusive Media Tag"
+      - "&7➥ &#E43A96Special Prefix"
+      - "&7➥ &#E43A96Tab Priority"
+      - "&7➥ &#E43A96Discord Role"
+      - "&7➥ &#E43A96Dedicated Discord channel access"
+      - "&7➥ &#E43A96Etc"
+      - ""
+      - "&#E43A96Create a ticket on Discord to apply!"
+      - ""
+    click_commands:
+      - '[message] &#E43A96&l🎥 APPLY FOR MEDIA RANK'
+      - '[message] '
+      - '[message]  Create a ticket on Discord to apply for Media Rank!'
+      - '[message]  &nhttps://dsc.gg/vlexor'
+      - '[close]'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'

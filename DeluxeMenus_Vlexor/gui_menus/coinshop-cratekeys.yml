@@ -1,0 +1,332 @@
+size: 54
+menu_title: 'Crate Keys'
+
+items:
+
+  'filler':
+    material: GRAY_STAINED_GLASS_PANE
+    display_name: "&f"
+    data: 1
+    slots: [0-53]
+
+  'back':
+    material: FLOWER_BANNER_PATTERN
+    data: 1
+    slot: 49
+    hide_effects: true
+    display_name: "&cGo Back"
+
+    click_commands:
+      - '[openmenu] coinshop'
+
+  'rare':
+    material: LIGHT_BLUE_CANDLE
+    data: 1
+    slot: 13
+    amount: 1
+    display_name: "&b&l1x Epic Key"
+    enchantments:
+      - DURABILITY;1
+    hide_enchantments: true
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&b◈ &fCost: &b600 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+
+    click_commands:
+      - '[console] crate key give %player_name% epic 1'
+      - '[console] points take %player_name% 600'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought &b1x Epic Key&#7AFE77!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '600'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f600 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+  'rare-3':
+    material: LIGHT_BLUE_CANDLE
+    data: 1
+    slot: 22
+    amount: 3
+    display_name: "&b&l3x Epic Keys"
+    enchantments:
+      - DURABILITY;1
+    hide_enchantments: true
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&b◈ &fCost: &b1,600 Coins"  # Discounted from 1,800
+      - "&7&oSave &b200 Coins&7&o!"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+
+    click_commands:
+      - '[console] crate key give %player_name% epic 3'
+      - '[console] points take %player_name% 1600'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought &b3x Epic Keys&#7AFE77!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '1600'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f1,600 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+  'rare-5':
+    material: LIGHT_BLUE_CANDLE
+    data: 1
+    slot: 31
+    amount: 5
+    display_name: "&b&l5x Epic Keys"
+    enchantments:
+      - DURABILITY;1
+    hide_enchantments: true
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&b◈ &fCost: &b2,500 Coins"  # Discounted from 3,000
+      - "&7&oSave &b500 Coins&7&o!"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+
+    click_commands:
+      - '[console] crate key give %player_name% epic 5'
+      - '[console] points take %player_name% 2500'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought &b5x Epic Keys&#7AFE77!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '2500'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f2,500 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+  'legendary':
+    material: RED_CANDLE
+    data: 1
+    slot: 15
+    amount: 1
+    display_name: "&c&l1x Legendary Key"
+    enchantments:
+      - DURABILITY;1
+    hide_enchantments: true
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&c◈ &fCost: &c750 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+
+    click_commands:
+      - '[console] crate key give %player_name% legendary 1'
+      - '[console] points take %player_name% 750'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought &c1x Legendary Key&#7AFE77!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '750'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f750 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+  'legendary-3':
+    material: RED_CANDLE
+    data: 1
+    slot: 24
+    amount: 3
+    display_name: "&c&l3x Legendary Keys"
+    enchantments:
+      - DURABILITY;1
+    hide_enchantments: true
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&c◈ &fCost: &c2,000 Coins"  # Discounted from 2,250
+      - "&7&oSave &c250 Coins&7&o!"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+
+    click_commands:
+      - '[console] crate key give %player_name% legendary 3'
+      - '[console] points take %player_name% 2000'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought &c3x Legendary Keys&#7AFE77!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '2000'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f2,000 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+  'legendary-5':
+    material: RED_CANDLE
+    data: 1
+    slot: 33
+    amount: 5
+    display_name: "&c&l5x Legendary Keys"
+    enchantments:
+      - DURABILITY;1
+    hide_enchantments: true
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&c◈ &fCost: &c3,100 Coins"  # Discounted from 3,750
+      - "&7&oSave &c650 Coins&7&o!"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+
+    click_commands:
+      - '[console] crate key give %player_name% legendary 5'
+      - '[console] points take %player_name% 3100'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought &c5x Legendary Keys&#7AFE77!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '3100'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f3,100 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+  'epic':
+    material: LIME_CANDLE
+    data: 1
+    slot: 11
+    amount: 1
+    display_name: "&a&l1x Rare Key"
+    enchantments:
+      - DURABILITY;1
+    hide_enchantments: true
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&a◈ &fCost: &a300 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+
+    click_commands:
+      - '[console] crate key give %player_name% rare 1'
+      - '[console] points take %player_name% 300'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought &a1x Rare Key&#7AFE77!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '300'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f300 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+  'epic-3':
+    material: LIME_CANDLE
+    data: 1
+    slot: 20
+    amount: 3
+    display_name: "&a&l3x Rare Keys"
+    enchantments:
+      - DURABILITY;1
+    hide_enchantments: true
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&a◈ &fCost: &a800 Coins"  # Discounted from 900
+      - "&7&oSave &a100 Coins&7&o!"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+
+    click_commands:
+      - '[console] crate key give %player_name% rare 3'
+      - '[console] points take %player_name% 800'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought &a3x Rare Keys&#7AFE77!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '800'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f800 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+  'epic-5':
+    material: LIME_CANDLE
+    data: 1
+    slot: 29
+    amount: 5
+    display_name: "&a&l5x Rare Keys"
+    enchantments:
+      - DURABILITY;1
+    hide_enchantments: true
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&a◈ &fCost: &a1,250 Coins"  # Discounted from 1,500
+      - "&7&oSave &a250 Coins&7&o!"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+
+    click_commands:
+      - '[console] crate key give %player_name% rare 5'
+      - '[console] points take %player_name% 1250'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought &a5x Rare Keys&#7AFE77!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '1250'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f1,250 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'

@@ -1,0 +1,33 @@
+open_command:
+  - store
+
+register_command: true
+open_commands:
+  - "[sound] UI_TOAST_IN"
+close_commands:
+  - "[sound] UI_TOAST_OUT"
+size: 27
+menu_title: '&7ѕᴛᴏʀᴇ'
+
+items:
+
+  'filler':
+    material: GRAY_STAINED_GLASS_PANE
+    display_name: "&f"
+    data: 1
+    slots: [0-26]
+
+  'store':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjdmYzRkZmE1ZjY1MmY2ZTFjMWIxOWZiODc2NTU5NjdlYjgyZmI1ZmE3MTkwNDJmOGM4MDVjYWQ3ZjAxZTQ4NyJ9fX0=
+    data: 1
+    slot: 13
+    display_name: "&#FFA500&lᴏᴘᴇɴ ѕᴛᴏʀᴇ"
+    lore:
+      - ""
+      - "&f▶&#FFA500ʙᴜʏ ʀᴀɴᴋꜱ, ᴋɪᴛꜱ, ᴘᴇʀᴋꜱ ᴀɴᴅ ᴍᴏʀᴇ"
+      - "&fclick this to get the store link in chat"
+      - ""
+    left_click_commands:
+      - '[message] &f▶ &f&lᴏᴘᴇɴ ѕᴛᴏʀᴇ &#FFA500https://dsc.gg/vlexorshop'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[close]'

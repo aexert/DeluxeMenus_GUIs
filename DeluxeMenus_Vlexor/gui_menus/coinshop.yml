@@ -1,0 +1,76 @@
+open_command: 'coinshop'
+register_command: true
+size: 45
+menu_title: 'Coin Shop'
+
+
+items:
+
+  'filler':
+    material: GRAY_STAINED_GLASS_PANE
+    display_name: "&f"
+    data: 1
+    slots: [0-44]
+
+
+
+  'main':
+    material: SUNFLOWER
+    data: 1
+    slot: 12
+    display_name: "&#ffeb14&lCoins Information"
+    lore:
+      - "&8Coinshop Information"
+      - ""
+      - "&fYou have &#ffeb14%playerpoints_points_formatted% &fcoins"
+      - ""
+      - "&#ffeb14What are coins?"
+      - "&fCoins are a virtual currency used to"
+      - "&fbuy crate keys etc."
+      - ""
+      - "&#ffeb14How can I obtain Coins?"
+      - "&fYou can buy coins from our webstore or"
+      - "&fwin them from crates, events, vote, etc"
+
+  'store':
+    material: MAP
+    data: 1
+    slot: 14
+    display_name: "&#00d400Webstore Link"
+    lore:
+      - "&8Coinshop Information"
+      - ""
+      - "&fWant to buy coins?"
+      - "&fCheck out the webstore!"
+      - ""
+      - "&e&l➥ CLICK FOR STORE"
+
+    click_commands:
+      - '[message]  '
+      - '[message]  '
+      - '[message] &#8BF8FFVisit the webstone to top up on coins!'
+      - '[message]  '
+      - '[message] &#8BF8FF➥ &lhttps://dsc.gg/vlexorshop'
+      - '[message]  '
+      - '[message]  '
+      - '[close]'
+
+
+  'crate-keys':
+    material: TRIPWIRE_HOOK
+    data: 1
+    slot: 31
+    display_name: "&#66DDFF&lCrate Keys"
+    enchantments:
+      - DURABILITY;1
+    hide_enchantments: true
+    lore:
+      - "&8Coinshop Category"
+      - ""
+      - "&fCrate keys are used to"
+      - "&fopen crates for a reward."
+      - ""
+      - "&e&l➥ CLICK TO BROWSE"
+
+    click_commands:
+      - '[openmenu] coinshop-cratekeys'

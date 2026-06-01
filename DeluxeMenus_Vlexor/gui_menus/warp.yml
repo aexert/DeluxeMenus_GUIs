@@ -1,0 +1,103 @@
+#  StarMC DeluxeMenus Warps Menu
+#=========================================================
+open_command: 
+  - warps
+register_command: true
+size: 36
+menu_title: '&8Vlexor ➠ Warps'
+
+items:
+
+  'filler':
+    material:
+    display_name: ""
+    data: 
+    slots:
+
+  'crates':
+    material: ORANGE_SHULKER_BOX
+    data: 1
+    slot: 12
+    display_name: "&#BE9B26&lCRATES"
+    lore:
+      - "&8Warp Information"
+      - ""
+      - " &7Try your luck by opening crates"
+      - " &7and get &#BE9B26Awesome Rewards&7!"
+      - ""
+      - "&#BE9B26&l➥ CLICK TO TELEPORT"
+    left_click_commands:
+      - '[player] warp crates'
+      - '[close]'
+ 
+  'afk':
+    material: LIGHT_BLUE_CANDLE
+    data: 0
+    slot: 14
+    display_name: "&#00DFF7&lAFK"
+    enchantments:
+    - DURABILITY;1
+    hide_enchantments: true
+    hide_attributes: true
+    lore:
+      - "&8Warp Information"
+      - ""
+      - " &7Stay afk in the &#00DFF7AFK Arena &7to"
+      - " &7get &#00DFF7awesome &7rewards & &#00DFF7AFK Points&7!"
+      - ""
+      - "&#00DFF7&l➥ CLICK TO TELEPORT"
+    left_click_commands:
+      - '[player] warp afk'
+      - '[close]'
+
+  'party':
+    material: FIREWORK_ROCKET
+    data: 0
+    slot: 21
+    display_name: "&#F80000&lPINATA PARTY"
+    hide_attributes: true
+    lore:
+      - "&8Warp Information"
+      - ""
+      - " &7Get awesome &#F80000rewards by"
+      - " &7Killing the &#F80000Pinata!"
+      - ""
+      - "&#F80000&l➥ CLICK TO TELEPORT"
+    left_click_commands:
+      - '[player] warp pinata'
+      - '[close]'
+
+  'leaderboard':
+    material: GOLDEN_HELMET
+    data: 0
+    slot: 22
+    display_name: "&#FCCD69&lLEADERBOARDS"
+    hide_attributes: true
+    lore:
+      - "&8Warp Information"
+      - ""
+      - " &7Watch Out the &#FCCD69Top Players"
+      - " &7of FireMC LifeSteal!"
+      - ""
+      - "&#FCCD69&l➥ CLICK TO TELEPORT"
+    left_click_commands:
+      - '[player] warp leaderboard'
+      - '[close]'
+
+  'koth':
+    material: CROSSBOW
+    data: 0
+    slot: 23
+    display_name: "&#CAE68A&lΚ.Ο.Τ.Η &4(Coming Soon!)"
+    hide_attributes: true
+    lore:
+      - "&8Warp Information"
+      - ""
+      - " &7Get awesome &#CAE68Arewards by"
+      - " &7Capturing the &#CAE68AArea &7and be"
+      - " &#CAE68AKing Of The Hill!"
+      - ""
+      - "&#CAE68A&l➥ CLICK TO TELEPORT"
+    left_click_commands:
+      - '[player] warp koth'
+      - '[close]'
